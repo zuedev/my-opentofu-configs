@@ -73,5 +73,5 @@ resource "aws_route53_record" "opentofu-dot-aws-dot-zue-dot-dev-mail-from-spf" {
   name    = aws_ses_domain_mail_from.opentofu-dot-aws-dot-zue-dot-dev.mail_from_domain
   type    = "TXT"
   ttl     = "600"
-  records = ["v=spf1 include:amazonses.com -all"]
+  records = ["v=spf1 include:amazonses.com ~all"]
 }
