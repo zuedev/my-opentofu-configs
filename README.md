@@ -1,3 +1,3 @@
-# my-opentofu-configs
+# My OpenTofu Configs
 
-A place for all my OpenTofu configs to rest
+My IaC configuration files, powered by OpenTofu.
