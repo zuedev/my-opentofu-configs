@@ -75,3 +75,9 @@ resource "aws_route53_record" "opentofu-dot-aws-dot-zue-dot-dev-mail-from-spf" {
   ttl     = "600"
   records = ["v=spf1 include:amazonses.com ~all"]
 }
+
+# ses verified email identity for zuedev@gmail.com
+resource "aws_ses_email_identity" "zuedev-gmail-com" {
+  email = "zuedev@gmail.com"
+  depends_on = [aws_ses_domain_identity.opentofu-dot-aws-dot-zue-dot-dev]
+}
