@@ -37,3 +37,6 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+# ---> Environment Variables
+.env
+.env.ps1
